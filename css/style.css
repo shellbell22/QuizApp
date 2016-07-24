@@ -1,0 +1,106 @@
+* {
+   color: white;
+  }
+body {
+  background-color: rgb(35, 35, 35);
+}
+
+.title > a {
+    position: relative;
+    font-family: monospace;
+    text-decoration: none;
+    color: green;
+    font-size: 3em;
+    left: 40%;
+}
+
+.cursor {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    background: rgb(35, 35, 35);
+    -webkit-animation: typing 16s steps(12, end)infinite, blinking 1s step-end infinite;
+    animation: typing 16s steps(12, end) infinite, blinking 1s step-end infinite;
+    border-left: .5em solid;
+}
+#answer_holder{
+padding-bottom: 10%;
+
+}
+.question {
+  padding-top: 40px;
+  padding-bottom: 20px;
+  font-family: courier;
+}
+
+.answerlist {
+  margin-left: 38%;
+  margin-right: 30%;
+  text-align: center;
+  list-style-type: none;
+  font-family: courier;
+}
+
+
+.content {
+  text-align: center;
+}
+
+p {
+  text-align: center;
+  width: 90%;
+  padding-left: 5%;
+}
+
+.answeritem {
+  height: 30px;
+  width: 220px;
+  display: table-cell;
+  vertical-align: middle;
+  text-align: middle;
+}
+
+
+li:hover {
+  background-color: black;
+}
+
+
+@keyframes typing {
+    from { width: 100%; }
+    to { width: 0; }
+}
+
+@-webkit-keyframes typing {
+    from,to { width: 100%; }
+    25% { width: 0; }
+    50% { width: 0; }
+    75% { width: 100%; }
+}
+
+@keyframes blinking {
+    from, to { border-color: transparent; }
+    50% { border-color: green; }
+}
+
+@media screen and (max-width: 500px) {
+
+  .addlist {
+  max-width: 38em;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 2em;
+   }
+
+.sectionlists p {
+  font-size: 1.5em;
+}
+
+  .social {
+    font-size: .5rem;
+  }
+}
