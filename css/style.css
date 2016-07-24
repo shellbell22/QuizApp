@@ -28,7 +28,7 @@ body {
     border-left: .5em solid;
 }
 #answer_holder{
-padding-bottom: 10%;
+padding-bottom: 2%;
 
 }
 .question {
@@ -65,8 +65,18 @@ p {
 }
 
 
-li:hover {
+.answerlist > li:hover {
   background-color: black;
+}
+
+.scorepics {
+padding-left: 40%;
+}
+
+.scorepics > li {
+  display: inline-block;
+  display: none;
+
 }
 
 

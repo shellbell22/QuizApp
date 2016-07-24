@@ -8,7 +8,10 @@ var questions = [
 	answers:["Captain Crunch", "Cheerios", "Golden Grahams", "Rice Crispys"],
 	correctanswer: 0,
 },
-	{},
+	{title: "In what website did the hacker group Anonymous originate in 2003?",
+	answers:["reddit", "2chan", "4chan", "digg"],
+	correctanswer:2,
+},
 	{},
 	{},
 	{}
@@ -25,5 +28,15 @@ for (i = 0; i < 4; i++) {
 	$(inputs[i]).text(question.answers[i]);
 
 }
+
+assignlisteners();
+function assignlisteners() {
+	$('ul').on('click', '#answer1', function(event){
+		console.log('answer1 clicked');
+		
+	});
+
+	});
+
 
 });
