@@ -27,14 +27,32 @@ body {
     animation: typing 16s steps(12, end) infinite, blinking 1s step-end infinite;
     border-left: .5em solid;
 }
+
 #answer_holder{
 padding-bottom: 2%;
 
 }
+
+#question_wrapper > p {
+  font-size: 1.15em;
+}
+
+#question_wrapper {
+  height: 90px;
+}
+
+.title {
+  margin-top: 2%;
+}
+
 .question {
   padding-top: 40px;
   padding-bottom: 20px;
   font-family: courier;
+}
+
+#playagainbutton{
+  margin-left: 45%;
 }
 
 .answerlist {
@@ -53,7 +71,13 @@ padding-bottom: 2%;
 p {
   text-align: center;
   width: 90%;
-  padding-left: 5%;
+  padding-left: 3%;
+  font-family: courier;
+  font-size: 1.5em;
+}
+
+#totalscore {
+  font-size: 2em;
 }
 
 .answeritem {
@@ -68,6 +92,15 @@ p {
   display: none;
 }
 
+#playagainbutton {
+  background-color: black;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-top: 2%;
+  margin-bottom: 3%;
+}
 
 .answerlist > li:hover {
   background-color: black;
@@ -75,6 +108,8 @@ p {
 
 .scorepics {
 padding-left: 40%;
+margin-top: 1%;
+margin-bottom: 3%;
 }
 
 .scorepics > li {

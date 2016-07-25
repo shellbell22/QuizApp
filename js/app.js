@@ -1,6 +1,6 @@
 
 $(document).ready(function() {
-	
+
 updateView();
 assignlisteners();
 
@@ -20,13 +20,14 @@ var questions = [
 },
 	{title: "What year was PGP created?",
 	 answers:["1988", "1997", "2000", "1991"],
- 	 correctanswer: 3},
-	{title: "On what network did Robert Morris launch a worm (later called the Morris worm) that spread to 6,000 computers, clogging the network.",
-	answers: ["ARPANET", "answer2", "answer3", "answer4"],
+ 	 correctanswer: 3
+ },
+	{title: "Who was the first person convited of a felony under the Computer Fraud and Abuse Act in 1988?",
+	answers: ["Robert Morris", "Kevin Mitnick", "Kevin Poulson", "Stephen Wozniak"],
 	correctanswer: 0,
 },
-	{title: "Placeholder 5",
-	answers: ["answer1", "answer2", "answer3", "answer4"],
+	{title: "Which of the tools listed is not a password cracking tool?",
+	answers: ["Cain and Abel", "John the Ripper", "Maltego", "THC Hydra"],
 	correctanswer: 2,
 }
 ];
@@ -48,7 +49,7 @@ function assignlisteners() {
 		console.log('answer4 clicked');
 		nextQuestion(3);
 	});
-	$('#playagain').click(function(){
+	$('#playagainbutton').click(function(){
 		currentquestion = 0;
 		correctanswer = 0;
 		$('#question_wrapper').show();
