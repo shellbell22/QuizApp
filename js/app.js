@@ -66,11 +66,11 @@ function nextQuestion(answer) {
 var question = questions[currentquestion];
 
 	if (answer == question.correctanswer) {
-		$('.scorepics').append('<li><img src="images/lock.png"></li>');
+		$('.scorepics').append('<li><img src="images/lockopen.png"></li>');
 		correctanswer++;
 	}
 	else {
-		$('.scorepics').append('<li><img src="images/lockopen.png"></li>');
+		$('.scorepics').append('<li><img src="images/lock.png"></li>');
 	}
 
 	currentquestion++;
