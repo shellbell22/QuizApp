@@ -64,6 +64,10 @@ p {
   text-align: middle;
 }
 
+#playagain {
+  display: none;
+}
+
 
 .answerlist > li:hover {
   background-color: black;
@@ -75,8 +79,6 @@ padding-left: 40%;
 
 .scorepics > li {
   display: inline-block;
-  display: none;
-
 }
 
 

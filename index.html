@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<title>Hacker Quiz</title>
@@ -9,17 +10,18 @@
 	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
 	<!-- <link rel="shortcut icon" type="image/x-icon"  href="favicon.ico"> -->
 </head>
+
 <body>
 	<section class="title">
-			<a> H@ck3r Qu1z <br> <span class="cursor"> </span></a>
+		<a> H@ck3r Qu1z <br> <span class="cursor"> </span></a>
 	</section>
 
 	<div id="question_wrapper">
 		<p class="question"> Placeholder question </p>
 		<br>
 	</div>
-		<div id="answer_holder">
-			<ul class = "answerlist">
+	<div id="answer_holder">
+		<ul class="answerlist">
 			<li class="answeritem" id="answer1">
 				<span class="answer">Answer1</span>
 			</li>
@@ -32,22 +34,22 @@
 				<span class="answer">Answer3</span>
 			</li>
 			<br>
-			<li class="answeritem" id="answer4>
+			<li class="answeritem" id="answer4">
 				<span class="answer">Answer4</span>
 			</li>
 			<br>
 		</ul>
-		</div>
+	</div>
+
+	<div id="playagain">
+		<p> Your score is <span id="totalscore"></span></p>
+		<input type="button" value="Play Again" id="playagainbutton"></input>
+	</div>
 
 	<div id="bottom">
 		<div id="scoreholder">
 			<div id="questionscore">
 				<ul class="scorepics">
-					<li><img src="images/lock.png"></li>
-					<li><img src="images/lockopen.png"></li>
-					<li><img src="images/lock.png"></li>
-					<li><img src="images/lockopen.png"></li>
-					<li><img src="images/lock.png"></li>
 				</ul>
 			</div>
 		</div>
@@ -65,4 +67,5 @@
 	<script src="http://code.jquery.com/jquery.min.js"></script>
 	<script src="js/app.js"></script>
 </body>
+
 </html>
